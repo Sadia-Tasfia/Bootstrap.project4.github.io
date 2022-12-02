@@ -301,6 +301,9 @@ a{
   border-radius: 3px;
   margin: -2px -1px ;
 }
+
+
+
 .list .item span{
   color: var(--white);
   font-weight: 600;
@@ -538,16 +541,18 @@ a{
 .resume .list{
   border-left: 1px solid white;
   width: 100%;
+
 }
 .resume .list ul{
   margin: 0;
   position: relative;
+  padding: 10px;
 }
 .resume .list ul li a{
   display: inline-block;
   position: absolute;
   background-color: var(--extra-color);
-  left: -8%;
+  left: -6%;
   top: 0;
   width: 72px;
   height: 72px;
@@ -575,19 +580,26 @@ a{
   font-size: 18px;
 }
 @media screen  and (max-width:450px) {
-  .resume .list ul li a{
-    left: -8%;
-    top: 0;
-  }
-}
-@media screen and (max-width:550px) {
   .resume .list{
     width: auto;
-    padding-left: 15px;
+    margin-left: 10px;
+    padding-left: 10px;
   }
   .resume .list ul li a{
+    display: inline-block;
     left: -10%;
-    top: 0;
+    top: 10px;
+  }
+}
+@media screen and (max-width:580px) {
+  .resume .list{
+    width: auto;
+    margin-left: 25px;
+    padding: 12px;
+  }
+  .resume .list ul li a{
+    /* left: -7%; */
+    top: 10px;
     width: 36px;
     height: 36px;
     border-radius: 100%;
@@ -784,9 +796,9 @@ a{
 }
 .blog-wrapper .card img{
   position: relative;
-  height: 300px;
+  height: 220px;
   width: 100%;
-  border-radius: 7px;
+  border-radius: 5px;
 }
 .blog-wrapper .card-body{
   background-color: var(--card);
